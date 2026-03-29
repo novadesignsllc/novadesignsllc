@@ -237,9 +237,15 @@ a.nav-begin {
   position: absolute;
   border-radius: 50%;
   filter: blur(120px);
-  opacity: 0.35;
+  opacity: 0;
   pointer-events: none;
   z-index: 1;
+  animation: heroGlowFade 5.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: 0.5s;
+}
+@keyframes heroGlowFade {
+  from { opacity: 0; }
+  to   { opacity: 0.35; }
 }
 .hero-glow-1 {
   width: 700px; height: 700px;
@@ -250,14 +256,24 @@ a.nav-begin {
   width: 600px; height: 600px;
   background: radial-gradient(circle, #3b82f6 0%, transparent 70%);
   top: -100px; right: -150px;
-  opacity: 0.25;
+  animation: heroGlowFade2 5.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: 0.5s;
+}
+@keyframes heroGlowFade2 {
+  from { opacity: 0; }
+  to   { opacity: 0.25; }
 }
 .hero-glow-3 {
   width: 500px; height: 500px;
   background: radial-gradient(circle, #6366f1 0%, transparent 70%);
   bottom: 0; left: 50%;
   transform: translateX(-50%);
-  opacity: 0.2;
+  animation: heroGlowFade3 5.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: 0.5s;
+}
+@keyframes heroGlowFade3 {
+  from { opacity: 0; }
+  to   { opacity: 0.2; }
 }
 
 .hero-inner { position: relative; z-index: 10; }
