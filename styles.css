@@ -175,6 +175,7 @@ a.nav-begin {
   height: 100%;
   z-index: 2;
   pointer-events: none;
+  opacity: 0;
   animation: shaderFadeHero75 5.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   animation-delay: 0.5s;
 }
