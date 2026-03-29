@@ -694,9 +694,10 @@ a.nav-begin {
 
 .footer-cta-heading {
   font-family: 'Rakkas', serif;
-  font-size: clamp(64px, 10vw, 120px);
+  font-size: clamp(48px, 10vw, 120px);
   line-height: 1;
   letter-spacing: 0.05em;
+  white-space: nowrap;
   background: linear-gradient(to right, #8b3cf7, #5b50f0, #93b4fb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -826,10 +827,10 @@ a.nav-begin {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 12px;
   border-top: 1px solid rgba(255, 255, 255, 0.07);
-  max-width: 480px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 24px 0 0;
 }
