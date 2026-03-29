@@ -1024,8 +1024,14 @@ a.nav-begin {
   .pricing-two-col { flex-direction: column; align-items: center; }
   .pricing-block { width: 100%; max-width: 100%; padding: 32px 20px; }
 
-  /* FAQ */
+  /* FAQ — accordion */
   .faq-grid { grid-template-columns: 1fr; }
+  .faq-item { cursor: pointer; padding: 20px 24px; }
+  .faq-item h4 { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 0; }
+  .faq-item h4::after { content: '+'; font-size: 20px; font-weight: 300; color: var(--text-dim); flex-shrink: 0; transition: transform 0.25s; }
+  .faq-item.open h4::after { transform: rotate(45deg); }
+  .faq-item p { max-height: 0; overflow: hidden; transition: max-height 0.35s ease, margin-top 0.25s ease; margin-top: 0; }
+  .faq-item.open p { max-height: 300px; margin-top: 12px; }
 
   /* Contact */
   .footer { padding: 160px 16px 140px; }
