@@ -11,7 +11,7 @@
 })();
 
 // Intersection Observer for fade-in animations
-const observerOptions = { threshold: 0.12, rootMargin: '0px 0px -40px 0px' };
+const observerOptions = { threshold: 0.08, rootMargin: '0px 0px -40px 0px' };
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -21,10 +21,19 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, observerOptions);
 
+// Individual card fade-ups
 document.querySelectorAll(
-  '.problem-card, .service-card, .work-card, .process-step, .pricing-card, .faq-item'
+  '.problem-card, .service-card, .work-card, .process-step, .pricing-block, .faq-item'
 ).forEach(el => {
   el.classList.add('fade-up');
+  observer.observe(el);
+});
+
+// Section-level fade-ins
+document.querySelectorAll(
+  '.testimonials, .work, .pricing, .faq, .footer, .footer-bar'
+).forEach((el, i) => {
+  el.classList.add('section-fade');
   observer.observe(el);
 });
 
