@@ -926,6 +926,10 @@ a.nav-begin {
   from { opacity: 0; transform: translateX(-50%) translateY(-32px); }
   to   { opacity: 1; transform: translateX(-50%) translateY(0); }
 }
+@keyframes navRise {
+  from { opacity: 0; transform: translateX(-50%) translateY(32px); }
+  to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
 @keyframes heroFade {
   from { opacity: 0; transform: translateY(24px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -984,8 +988,8 @@ a.nav-begin {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    animation: none;
-    opacity: 1;
+    animation: navRise 1.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+    animation-delay: 1.2s;
   }
   .nav-pill {
     padding: 6px 8px;
