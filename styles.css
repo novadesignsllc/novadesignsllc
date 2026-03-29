@@ -164,8 +164,8 @@ a.nav-begin {
   z-index: 1;
   pointer-events: none;
   opacity: 0;
-  animation: shaderFadeHero50 3.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-  animation-delay: 0.2s;
+  animation: shaderFadeHero50 5.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: 0.3s;
 }
 
 #hero-shader {
@@ -175,13 +175,13 @@ a.nav-begin {
   height: 100%;
   z-index: 2;
   pointer-events: none;
-  animation: shaderFadeHero75 3.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation: shaderFadeHero75 5.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
 #stars-hero {
   opacity: 0;
-  animation: shaderFadeHero1 3.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-  animation-delay: 0.1s;
+  animation: shaderFadeHero1 5.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: 0.15s;
 }
 
 @keyframes shaderFadeHero75 {
@@ -959,16 +959,16 @@ a.nav-begin {
 }
 
 .nav {
-  animation: navDrop 1.4s cubic-bezier(0.22, 1, 0.36, 1) both;
-  animation-delay: 1.2s;
+  animation: navDrop 2s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-delay: 1.8s;
 }
 
 .hero-inner {
-  animation: heroFade 1.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: heroFade 2.5s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 .hero-scroll {
-  animation: heroFadeScroll 1.8s cubic-bezier(0.22, 1, 0.36, 1) both;
-  animation-delay: 0.4s;
+  animation: heroFadeScroll 2.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-delay: 0.6s;
 }
 
 .fade-up {
@@ -1007,8 +1007,8 @@ a.nav-begin {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    animation: navRise 1.4s cubic-bezier(0.22, 1, 0.36, 1) both;
-    animation-delay: 1.2s;
+    animation: navRise 2s cubic-bezier(0.22, 1, 0.36, 1) both;
+    animation-delay: 1.8s;
   }
   .nav-pill {
     padding: 6px 8px;
