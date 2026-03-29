@@ -815,13 +815,14 @@ a.nav-begin {
 }
 
 .custom-select.open .custom-select-arrow {
-  transform: rotate(180deg);
+  transform: rotate(0deg);
 }
 
 .custom-select-options {
   display: none;
   position: absolute;
-  top: 100%;
+  bottom: 100%;
+  top: auto;
   left: 0;
   right: 0;
   background: rgba(13, 13, 26, 0.98);
