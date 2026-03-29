@@ -999,7 +999,7 @@ a.nav-begin {
   .testimonials { padding: 48px 0 24px; }
   .pricing { padding: 40px 0 40px; }
   .faq { padding: 40px 0; }
-  .carousel-track-wrap--row2 { display: block; margin-top: 20px; }
+  .carousel-track-wrap--row2 { display: block; margin-top: 24px; }
   .carousel-track--reverse { animation: ticker-reverse 25s linear infinite; }
   .testimonial-card {
     width: 260px;
