@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nova Design & Development</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rakkas&family=Volkhov:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=13" />
+
+  <!-- SVG grain filter for logo -->
+  <svg width="0" height="0" style="position:absolute">
+    <defs>
+      <filter id="grain" x="0%" y="0%" width="100%" height="100%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" result="noise"/>
+        <feColorMatrix type="saturate" values="0" in="noise" result="grayNoise"/>
+        <feBlend in="SourceGraphic" in2="grayNoise" mode="overlay" result="blend"/>
+        <feComposite in="blend" in2="SourceGraphic" operator="in"/>
+      </filter>
+    </defs>
+  </svg>
+</head>
+<body>
+
+  <div style="position:fixed;top:10px;left:10px;font-size:11px;color:#999;z-index:9999;pointer-events:none;">v6</div>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <ul class="nav-pill">
+      <li><a href="#testimonials">Clients</a></li>
+      <li><a href="#work">Showcase</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Start</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+    <div class="hero-glow hero-glow-3"></div>
+    <div class="hero-inner">
+      <div class="hero-logo">
+        <div class="hero-logo-nova">NOVA</div>
+        <div class="hero-logo-sub">DESIGN &amp; DEVELOPMENT</div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS (carousel) -->
+  <section class="testimonials" id="testimonials">
+    <div class="carousel-track-wrap">
+      <div class="carousel-track" id="carouselTrack">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"We'd been limping along with a site we built ourselves years ago. Nova completely transformed it — now we actually get calls from Google searches. Game changer."</p>
+          <div class="testimonial-author">Sarah M. (Riverstone Bistro)</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"I was losing business to competitors with better websites. Nova fixed mine in two weeks and within a month I had more leads than I knew what to do with. Worth every penny."</p>
+          <div class="testimonial-author">Marcus T. (Peak Home Services)</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Professional, fast, and they actually explained everything in plain English. My online store went from zero to profitable in 30 days. Nova is the real deal."</p>
+          <div class="testimonial-author">Jenna K. (Bloom Candle Co.)</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Nova rebuilt our entire site in under three weeks. The difference was night and day — clean, fast, and our phone started ringing almost immediately after launch."</p>
+          <div class="testimonial-author">Derek L. (Clearview Plumbing)</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"I didn't think a website could make such a difference for a small bakery. Nova proved me wrong — we're booked out two weeks in advance now."</p>
+          <div class="testimonial-author">Maria C. (Sugarcraft Bakery)</div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+  <!-- WORK / PORTFOLIO -->
+  <section class="work" id="work">
+    <div class="work-glow work-glow-1"></div>
+    <div class="container">
+      <div class="work-grid">
+        <div class="work-card">
+          <div class="work-img work-img-1"></div>
+        </div>
+        <div class="work-card">
+          <div class="work-img work-img-2"></div>
+        </div>
+        <div class="work-card">
+          <div class="work-img work-img-3"></div>
+        </div>
+        <div class="work-card">
+          <div class="work-img work-img-4"></div>
+        </div>
+        <div class="work-card">
+          <div class="work-img work-img-5"></div>
+        </div>
+        <div class="work-card work-card--cta">
+          <div class="work-cta-inner">
+            <p>and more...</p>
+            <a href="#" class="btn btn-outline">See All Work</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing" id="pricing">
+    <div class="pricing-glow pricing-glow-1"></div>
+    <div class="container">
+      <div class="pricing-two-col">
+
+        <!-- WEBSITE BUILD -->
+        <div class="pricing-block">
+          <div class="pricing-block-header">
+            <span class="pricing-block-tag">One-time</span>
+            <h3>Website Build</h3>
+            <div class="pricing-block-price">$750</div>
+            <p>A custom-designed website built from the ground up, ready to launch and convert.</p>
+          </div>
+          <a href="#contact" class="btn btn-primary">Get Started</a>
+        </div>
+
+        <!-- MANAGEMENT -->
+        <div class="pricing-block pricing-block--management">
+          <div class="pricing-block-header">
+            <span class="pricing-block-tag">Monthly</span>
+            <h3>Management</h3>
+            <p>Ongoing support to keep your site live.</p>
+          </div>
+          <div class="mgmt-tiers">
+            <div class="mgmt-tier">
+              <div class="mgmt-tier-name">Simple</div>
+              <div class="mgmt-tier-desc">Hosting + help with errors</div>
+            </div>
+            <div class="mgmt-tier mgmt-tier--featured">
+              <div class="mgmt-tier-name">Plus</div>
+              <div class="mgmt-tier-desc">2 revisions per month</div>
+            </div>
+            <div class="mgmt-tier">
+              <div class="mgmt-tier-name">Pro</div>
+              <div class="mgmt-tier-desc">5 revisions per month</div>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-outline">Ask About Plans</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h4>How long does a new website take?</h4>
+          <p>Most projects are completed in 2–4 weeks depending on scope. Quick fixes can often be done within days. We give you a firm timeline upfront.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Do I need to provide content and images?</h4>
+          <p>Nope — we can write copy and source professional images for you. If you have your own brand assets, even better. We make it easy either way.</p>
+        </div>
+        <div class="faq-item">
+          <h4>What platform do you build on?</h4>
+          <p>We primarily work with WordPress, Webflow, Shopify, and custom HTML/CSS. We recommend the best platform for your specific needs and budget.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Will I be able to update my own site?</h4>
+          <p>Yes. We build on platforms with easy content management and provide a walkthrough so you can make simple updates without needing us.</p>
+        </div>
+        <div class="faq-item">
+          <h4>What if I don't love the design?</h4>
+          <p>All packages include revision rounds. We work with you until you're happy. We've never launched a site a client wasn't proud of.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Do you offer payment plans?</h4>
+          <p>Yes — we typically split payment 50% upfront and 50% on completion. We can discuss other arrangements for larger projects.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Do you only work with certain industries?</h4>
+          <p>We work with all types of small businesses — restaurants, contractors, salons, law firms, retail, e-commerce, consultants, and more.</p>
+        </div>
+        <div class="faq-item">
+          <h4>What happens after launch?</h4>
+          <p>Every package includes post-launch support. We also offer ongoing monthly maintenance plans so your site stays fast, secure, and updated.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="footer" id="contact">
+    <div class="footer-cta">
+      <h2 class="footer-cta-heading">Start Here</h2>
+      <form class="footer-form" onsubmit="handleFooterSubmit(event)">
+        <div class="footer-form-row">
+          <input type="text" class="footer-input" placeholder="Your Name" required />
+          <input type="email" class="footer-input" placeholder="Your Email" required />
+        </div>
+        <input type="text" class="footer-input" placeholder="Business Name" required />
+        <input type="text" class="footer-input" placeholder="Industry" required />
+        <div class="custom-select">
+          <div class="custom-select-trigger">
+            <span class="custom-select-value">Select a Plan</span>
+            <span class="custom-select-arrow">▾</span>
+          </div>
+          <div class="custom-select-options">
+            <div class="custom-select-option" data-value="one-time">One-Time</div>
+            <div class="custom-select-option" data-value="simple">Simple</div>
+            <div class="custom-select-option" data-value="plus">Plus</div>
+            <div class="custom-select-option" data-value="pro">Pro</div>
+          </div>
+          <input type="hidden" name="plan" class="custom-select-input" />
+        </div>
+        <button type="submit" class="btn btn-primary footer-submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer-bar">
+    <div class="footer-bottom">
+      <p>© 2026 Nova Design &amp; Development. All rights reserved.</p>
+      <p><a href="#">Privacy Policy</a> · <a href="#">Terms</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="stars.js"></script>
+  <script src="Shooting.js"></script>
+  <script src="ColorsShader.js"></script>
+</body>
+</html>
