@@ -1002,12 +1002,12 @@ a.nav-begin {
   .carousel-track-wrap--row2 { display: block; margin-top: 20px; }
   .carousel-track--reverse { animation: ticker-reverse 25s linear infinite; }
   .testimonial-card {
-    width: 220px;
-    padding: 14px 16px 12px;
+    width: 260px;
+    padding: 16px 18px 14px;
   }
-  .testimonial-card > p { font-size: 11px; line-height: 1.55; margin-bottom: 10px; }
-  .testimonial-author { font-size: 11px; }
-  .stars { font-size: 12px; margin-bottom: 8px; }
+  .testimonial-card > p { font-size: 12px; line-height: 1.6; margin-bottom: 12px; }
+  .testimonial-author { font-size: 12px; }
+  .stars { font-size: 13px; margin-bottom: 10px; }
 
   /* Hero */
   .hero-logo-nova { letter-spacing: 0.18em; }
