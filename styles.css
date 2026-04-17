@@ -544,7 +544,51 @@ a.nav-begin {
   text-align: right;
 }
 
-/* ---- TESTIMONIALS TICKER ---- */
+/* ---- HIGHLIGHTS TICKER ---- */
+.highlights-ticker {
+  padding: 48px 0;
+  overflow: hidden;
+}
+
+.highlights-track-wrap {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+}
+
+.highlights-track {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  width: max-content;
+  animation: ticker 20s linear infinite;
+  will-change: transform;
+}
+
+.highlight-item {
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #c084fc, #818cf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-right: 32px;
+}
+
+.highlight-sep {
+  color: var(--text-dim);
+  font-size: 20px;
+  opacity: 0.4;
+  flex-shrink: 0;
+  margin-right: 32px;
+}
+
+/* ---- TESTIMONIALS TICKER (commented out) ---- */
 .testimonials {
   padding: 80px 0 32px;
   overflow: hidden;

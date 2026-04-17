@@ -58,8 +58,41 @@
     </div>
   </section>
 
-  <!-- TESTIMONIALS (carousel) -->
-  <section class="testimonials" id="testimonials">
+  <!-- HIGHLIGHTS TICKER -->
+  <section class="highlights-ticker" id="testimonials">
+    <div class="highlights-track-wrap">
+      <div class="highlights-track">
+        <span class="highlight-item">Fast Turnaround</span>
+        <span class="highlight-sep">·</span>
+        <span class="highlight-item">Demo Sites</span>
+        <span class="highlight-sep">·</span>
+        <span class="highlight-item">Hosting</span>
+        <span class="highlight-sep">·</span>
+        <span class="highlight-item">Management</span>
+        <span class="highlight-sep">·</span>
+        <span class="highlight-item">Design</span>
+        <span class="highlight-sep">·</span>
+        <span class="highlight-item">and more</span>
+        <span class="highlight-sep">·</span>
+        <!-- duplicate for seamless loop -->
+        <span class="highlight-item">Fast Turnaround</span>
+        <span class="highlight-sep">·</span>
+        <span class="highlight-item">Demo Sites</span>
+        <span class="highlight-sep">·</span>
+        <span class="highlight-item">Hosting</span>
+        <span class="highlight-sep">·</span>
+        <span class="highlight-item">Management</span>
+        <span class="highlight-sep">·</span>
+        <span class="highlight-item">Design</span>
+        <span class="highlight-sep">·</span>
+        <span class="highlight-item">and more</span>
+        <span class="highlight-sep">·</span>
+      </div>
+    </div>
+  </section>
+
+  <!--
+  <section class="testimonials" id="testimonials-old">
     <div class="carousel-track-wrap">
       <div class="carousel-track" id="carouselTrack">
         <div class="testimonial-card">
@@ -89,7 +122,6 @@
         </div>
       </div>
     </div>
-    <!-- Second row — mobile only -->
     <div class="carousel-track-wrap carousel-track-wrap--row2">
       <div class="carousel-track carousel-track--reverse" id="carouselTrack2">
         <div class="testimonial-card">
@@ -119,7 +151,8 @@
         </div>
       </div>
     </div>
-    </section>
+  </section>
+  -->
 
   <!-- WORK / PORTFOLIO -->
   <section class="work" id="work">
@@ -240,13 +273,17 @@
   <section class="footer" id="contact">
     <div class="footer-cta">
       <h2 class="footer-cta-heading">Start Here</h2>
-      <form class="footer-form" onsubmit="handleFooterSubmit(event)">
+      <div data-fs-success class="footer-success">
+        <p>We'll be in touch soon!</p>
+      </div>
+      <form class="footer-form" id="footer-form">
+        <div data-fs-error class="footer-fs-error"></div>
         <div class="footer-form-row">
-          <input type="text" class="footer-input" placeholder="Your Name" required />
-          <input type="email" class="footer-input" placeholder="Your Email" required />
+          <input type="text" class="footer-input" placeholder="Your Name" name="name" data-fs-field required />
+          <input type="email" class="footer-input" placeholder="Your Email" name="email" data-fs-field required />
         </div>
-        <input type="text" class="footer-input" placeholder="Business Name" required />
-        <input type="text" class="footer-input" placeholder="Industry" required />
+        <input type="text" class="footer-input" placeholder="Business Name" name="business" data-fs-field required />
+        <input type="text" class="footer-input" placeholder="Industry" name="industry" data-fs-field required />
         <div class="custom-select">
           <div class="custom-select-trigger">
             <span class="custom-select-value">Select a Plan</span>
@@ -260,8 +297,13 @@
           </div>
           <input type="hidden" name="plan" class="custom-select-input" />
         </div>
-        <button type="submit" class="btn btn-primary footer-submit">Send</button>
+        <button type="submit" class="btn btn-primary footer-submit" data-fs-submit-btn>Send</button>
       </form>
+      <script>
+        window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+        formspree('initForm', { formElement: '#footer-form', formId: 'xvzdknzp' });
+      </script>
+      <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
     </div>
     <div class="footer-bottom">
       <p>© 2026 Nova Design &amp; Development. All rights reserved.</p>

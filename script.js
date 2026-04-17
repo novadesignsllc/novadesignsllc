@@ -70,17 +70,6 @@ document.querySelectorAll('.custom-select').forEach(function (select) {
 });
 
 // Footer CTA form handler
-function handleFooterSubmit(e) {
-  e.preventDefault();
-  const btn = e.target.querySelector('button[type="submit"]');
-  btn.textContent = 'Sending...';
-  btn.disabled = true;
-  setTimeout(() => {
-    btn.textContent = "We'll be in touch soon!";
-    btn.style.background = 'linear-gradient(135deg, #16a34a, #4ade80)';
-    e.target.reset();
-  }, 1200);
-}
 
 // Contact form handler
 function handleSubmit(e) {
